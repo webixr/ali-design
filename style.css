@@ -1,0 +1,7 @@
+:root {
+    --main-color: #064E3B;
+    --second-color: #10B981;
+    --contact-us: #ECFDF5;
+    --button-gradient: linear-gradient(0deg, rgba(54,220,165,1) 0%, rgba(5,150,105,1) 100%);
+    --main-gradient: linear-gradient(0deg, rgba(16,185,129,1) 0%, rgba(5,150,105,1) 100%);
+}
