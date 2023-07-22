@@ -17,6 +17,22 @@
     font-family: 'El Messiri', sans-serif;
 }
 
+.heading {
+    width: 100%;
+    height: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+.heading h1 {
+    font-size: 45px;
+}
+
+
+
 header {
     width: 100%;
     height: 100vh;
@@ -32,7 +48,6 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
-
 header .container .content, header .container .img-box {
     width: 100%;
     height: 100%;
@@ -111,7 +126,31 @@ header .container .img-box img {
     }
 }
 
-
+.why {
+    width: 100%;
+    height: max-content;
+}
+.why .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 55px 15px;
+    background: var(--main-gradient);
+    color: var(--white-color);
+    font-size: 36px;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .why .container {
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .why .container {  
+        font-size: 26px;
+    }
+}
 
 .products {
     width: 100%;
@@ -129,7 +168,7 @@ header .container .img-box img {
 }
 .products .container .card {
     width: 100%;
-    height: 724px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,6 +244,100 @@ header .container .img-box img {
     }
 }
 
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color)
+}
+.contact .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .container .content, .contact .container .img-box {
+    width: 100%;
+    height: 100%;
+}
+.contact .container .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact .container .content {
+    padding: 5%;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+
+}
+.contact .container .content h1 {
+    width: fit-content;
+    background: var(--main-gradient);
+    color: var(--contact-us);
+    padding: 5px 30px;
+}
+.contact .container .content form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;    
+}
+.contact .container .content form label {
+    width: 100%;
+    max-width: 350px;
+}
+.contact .container .content form p {
+    color: var(--main-color);
+}
+.contact .container .content form span {
+    color: red;
+}
+.contact .container .content form input, .contact .container .content form label input {
+    width: 100%;
+    max-width: 350px;
+}
+.contact .container .content form textarea {
+    width: 100%;
+    height: 185px;
+    max-width: 350px;
+    max-height: 520px;
+}
+.contact .container .content form label input::placeholder {
+    color: var(--white-color);
+}
+.contact .container .content form input,
+.contact .container .content form label input, 
+.contact .container .content form textarea {
+    border: none;
+    background: var(--main-gradient);
+    padding: 15px;
+    color: var(--white-color);
+    font-size: 16px;
+    outline: none;
+}
+@media (max-width: 768px) {
+    .contact .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact .container .img-box {
+        display: none;
+    }
+    .contact .container .content form input,
+    .contact .container .content form label input, 
+    .contact .container .content form label, 
+    .contact .container .content form textarea {
+        max-width: 100%;
+    }
+}
+
+
 footer {
     width: 100%;
     max-width: 1440px;
@@ -216,4 +349,8 @@ footer {
     color: var(--white-color);
     background: var(--main-gradient);
     font-size: 18px;
+}
+footer a {
+    margin-right: 10px;
+    color: var(--white-color);
 }
